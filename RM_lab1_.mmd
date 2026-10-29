@@ -1,0 +1,14 @@
+erDiagram
+    DEPARTMENT ||--o{ EMPLOYEE : "has"
+    
+    DEPARTMENT {
+        int ID_Depto PK
+        string Nombre_Depto
+        decimal Presupuesto
+    }
+    
+    EMPLOYEE {
+        int ID_Emp PK
+        int ID_Depto FK
+        string Nombre
+    }
